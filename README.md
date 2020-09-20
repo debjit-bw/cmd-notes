@@ -10,6 +10,7 @@ command line notes requires:
 - #### Python v3+ to run
 - #### You know how you don't have to type .exe to execute a .exe file? That needs to be done for this python file as well. Add .pyw to PATHEXT environment variable (globally would be better). [More info on that here on Stack Overflow.](https://stackoverflow.com/questions/9037346/making-python-scripts-run-on-windows-without-specifying-py-extension)
 - #### .pyw file should be associated with the pythonw.exe file in the python root directory (where python.exe and pythonw.exe lives). [Check out how to do it. Also, this explains why i used .pyw instead of the vanilla .py](https://docs.python.org/2/using/windows.html) If this seems too weird, just change the association at Control Panel\Programs\Default Programs\Set Associations
+- ##### (OR) You can just use some pyinstaller magic, install this as a .exe file and just add the path to PATH environment variable. If you do this, then all those other scary sounding steps (like file type allocation and .pyw thingy) may not be necessary.
 - #### Set the necessary path inside note.pyw where you want your notes.txt to be.
 
 ## Example code
